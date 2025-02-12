@@ -804,7 +804,7 @@ panelview {
 /* === BOOKMARK AND HISTORY === */
 
 /* bookmark and history */
-#tabbrowser-tabbox>vbox {
+#tabbrowser-tabbox > #sidebar-box {
   z-index: 1 !important;
   align-self: center !important;
   position: absolute !important;
