@@ -1053,9 +1053,9 @@ findbar {
 
 /* ------------------ */
 
-/* hide minimize, maximize, and close button */
+/* minimize, maximize, and close button */
 .titlebar-buttonbox-container {
-  display: none
+  margin-right: 0 !important;
 }
 
 /* hide bottom left status bar when link is hovered*/
