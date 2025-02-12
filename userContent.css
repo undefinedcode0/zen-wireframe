@@ -1,0 +1,64 @@
+@-moz-document url("about:privatebrowsing") {
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --na-color-text: rgba(54, 20, 192, 1);
+      --na-color-bg: rgba(192, 180, 211, 0.6);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --na-color-text: rgba(192, 180, 211, 1);
+      --na-color-bg: rgba(54, 20, 192, 0.6);
+    }
+  }
+}
+
+@-moz-document url("about:newtab"), url("about:home") {
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --na-color-text: rgba(30, 30, 31, 1);
+      --na-color-bg: rgba(239, 233, 217, 0.6);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --na-color-text: rgba(209, 207, 192, 1);
+      --na-color-bg: rgba(30, 30, 31, 0.6);
+    }
+  }
+
+}
+
+@-moz-document url("about:newtab"), url("about:home"), url("about:privatebrowsing") {
+
+  #root,
+  .container {
+    display: none;
+  }
+
+  body:after {
+    font-weight: 500;
+    position: absolute;
+    margin: auto;
+    color: var(--na-color-text);
+    font-size: 200%;
+    background-color: var(--na-color-bg);
+    /* eee9d899 d1cfc099 */
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    content: '░░▒▒▓▓';
+    /* '░░▒▒▓▓' */
+    visibility: visible;
+    background-image: '';
+    /* url(loading.gif) */
+    background-size: 3em;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
