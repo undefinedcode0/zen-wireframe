@@ -365,6 +365,8 @@ panelview {
   filter: invert(100%) sepia(100%) brightness(120%) contrast(100%);
 }
 
+.tab-background { border-radius: var(--na-border-radius) !important; }
+
 /* selected tab background */
 .tabbrowser-tab[selected]:not([zen-essential])>stack>vbox {
   background: var(--na-color-text) !important;
