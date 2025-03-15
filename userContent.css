@@ -160,6 +160,6 @@
   }
 
 * {
-    font-family: 'JetBrainsMono Nerd Font' !important;
-	border-radius: 0px !important; 
+    /* font-family: 'JetBrainsMono Nerd Font' !important;*/
+    border-radius: 0px !important; 
 }
