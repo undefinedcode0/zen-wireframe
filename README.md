@@ -1,3 +1,4 @@
 # zen-wireframe
 
-![Cuplikan layar dari 2025-02-09 09-29-11](https://github.com/user-attachments/assets/fa41d622-f767-4ca7-9fd7-98bc43fc52de)
+![{22A51078-CFA8-46C9-AF56-E0A83C0F28DA}](https://github.com/user-attachments/assets/fd51496c-2fd1-42ac-9fa4-04e25d61f811)
+
