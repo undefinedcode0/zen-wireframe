@@ -1,43 +1,37 @@
-:root {
-  --na-border-radius: 10px;
-  --na-border-radius-small: 6px;
-  --na-window-margin: 12px;
-  --na-anim-duration: 0.3s;
-  --na-urlbar-width: 40vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
-  --zen-primary-color: rgba(247, 111, 83, 1) !important;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --na-color-text: rgb(30, 30, 31);
-    --na-color-bg: rgba(239, 233, 217, 1);
-    --na-color-text-second: rgba(30, 30, 31, 0.25);
-    --na-color-bg-second: rgba(239, 233, 217, 0.25);
-    --na-color-border: rgba(0, 0, 0, 1);
-    --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #00000011, #000000FF;
-  }
-
-  :root[privatebrowsingmode] {
-    --na-color-text: rgba(54, 20, 192, 1);
-    --na-color-bg: rgba(192, 180, 211, 1);
-    --na-color-text-second: rgba(54, 20, 192, 0.25);
-    --na-color-bg-second: rgba(192, 180, 211, 0.25);
-    --na-color-border: rgba(0, 0, 0, 1);
-    --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #00000011, #00000011;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
+
   :root {
-    --na-color-text: rgba(209, 207, 192, 1);
-    --na-color-bg: rgba(30, 30, 31, 1);
-    --na-color-text-second: rgba(209, 207, 192, 0.25);
-    --na-color-bg-second: rgba(30, 30, 31, 0.25);
-    --na-color-border: rgba(209, 207, 192, 1);
+    --zen-colors-primary: #313244 !important;
+    --zen-primary-color: #b4befe !important;
+    --zen-colors-secondary: #313244 !important;
+    --zen-colors-tertiary: #181825 !important;
+    --zen-colors-border: #b4befe !important;
+    --toolbarbutton-icon-fill: #b4befe !important;
+    --lwt-text-color: #cdd6f4 !important;
+    --toolbar-field-color: #cdd6f4 !important;
+    --tab-selected-textcolor: rgb(192, 202, 249) !important;
+    --toolbar-field-focus-color: #cdd6f4 !important;
+    --toolbar-color: #cdd6f4 !important;
+    --newtab-text-primary-color: #cdd6f4 !important;
+    --arrowpanel-color: #cdd6f4 !important;
+    --arrowpanel-background: #1e1e2e !important;
+    --sidebar-text-color: #cdd6f4 !important;
+    --lwt-sidebar-text-color: #cdd6f4 !important;
+    --lwt-sidebar-background-color: #11111b !important;
+    --toolbar-bgcolor: #313244 !important;
+    --newtab-background-color: #1e1e2e !important;
+    --zen-themed-toolbar-bg: #181825 !important;
+    --zen-main-browser-background: #181825 !important;
+  }
+
+  :root {
+    --na-color-text: #cdd6f4 !important;
+    --na-color-bg: #1e1e2e !important;
+    --na-color-text-second: #cdd6f4 !important;
+    --na-color-bg-second: #1e1e2e !important;
+    --na-color-border: #b4befe !important;
     --na-color-zero: rgba(0, 0, 0, 0);
-    --na-urlbar-bg: #f3f0e611, #f3f0e6FF;
+    --na-urlbar-bg: #1e1e2e !important;
   }
 
   :root[privatebrowsingmode] {
@@ -1075,4 +1069,9 @@ findbar {
 .browser-toolbar {
   margin: 0px !important;
   padding: 0px !important;
+}
+
+* {
+  /* font-family: 'JetBrainsMono Nerd Font' !important; */
+	border-radius: 0px !important; 
 }
