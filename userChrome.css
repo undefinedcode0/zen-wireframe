@@ -534,6 +534,22 @@ panelview {
   border-bottom: 1px solid var(--na-color-text) !important;
 }
 
+#zen-media-controls-toolbar {
+  margin-bottom: 10px;
+
+  & > toolbaritem {
+    background-color: color-mix(in srgb, #181825 70%, #1e1e2e 30%) !important;
+  }
+}
+
+#zen-media-info-vbox {
+  & label {
+    opacity: 1 !important;
+    color: #cdd6f4 !important;
+  }
+}
+
+
 /* urlbar loading text */
 #urlbar>.urlbar-input-container>.urlbar-input-box::before {
   content: "Loading" !important;
@@ -1072,6 +1088,6 @@ findbar {
 }
 
 * {
-  /* font-family: 'JetBrainsMono Nerd Font' !important; */
+    font-family: 'JetBrainsMono Nerd Font' !important;
 	border-radius: 0px !important; 
 }
