@@ -349,21 +349,21 @@ panelview {
 
 /* focused tab */
 .tabbrowser-tab[selected]:not([zen-essential]) label {
-  color: var(--na-color-bg) !important;
+  color: var(--na-color-text) !important;
 }
 
-/* invert selected tab icon color */
+/* invert selected tab icon color
 .tabbrowser-tab[selected] .tab-reset-button,
 .tabbrowser-tab[selected] .tab-close-button,
 .tabbrowser-tab[selected]:not([zen-essential]) img {
   filter: invert(100%) sepia(100%) brightness(120%) contrast(100%);
-}
+} */
 
 .tab-background { border-radius: var(--na-border-radius) !important; }
 
 /* selected tab background */
 .tabbrowser-tab[selected]:not([zen-essential])>stack>vbox {
-  background: var(--na-color-text) !important;
+  background: #45475a !important;
 }
 
 /* unfocused tabs */
@@ -535,7 +535,7 @@ panelview {
 }
 
 #zen-media-controls-toolbar {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 
   & > toolbaritem {
     background-color: color-mix(in srgb, #181825 70%, #1e1e2e 30%) !important;
@@ -1087,7 +1087,47 @@ findbar {
   padding: 0px !important;
 }
 
-* {
+.identity-color-blue {
+    --identity-tab-color: #89b4fa !important;
+    --identity-icon-color: #89b4fa !important;
+}
+
+.identity-color-turquoise {
+    --identity-tab-color: #94e2d5 !important;
+    --identity-icon-color: #94e2d5 !important;
+}
+
+.identity-color-green {
+    --identity-tab-color: #a6e3a1 !important;
+    --identity-icon-color: #a6e3a1 !important;
+ }
+
+.identity-color-yellow {
+    --identity-tab-color: #f9e2af !important;
+    --identity-icon-color: #f9e2af !important;
+ }
+
+.identity-color-orange {
+    --identity-tab-color: #fab387 !important;
+    --identity-icon-color: #fab387 !important;
+ }
+
+.identity-color-red {
+    --identity-tab-color: #f38ba8 !important;
+    --identity-icon-color: #f38ba8 !important;
+ }
+
+.identity-color-pink {
+    --identity-tab-color: #f5c2e7 !important;
+    --identity-icon-color: #f5c2e7 !important;
+ }
+
+.identity-color-purple {
+    --identity-tab-color: #cba6f7 !important;
+    --identity-icon-color: #cba6f7 !important;
+ }
+
+/* * {
     font-family: 'JetBrainsMono Nerd Font' !important;
 	border-radius: 0px !important; 
-}
+} */
