@@ -450,10 +450,20 @@ panelview {
   }
 }
 
+/* context menus */
 menupopup,
 panel {
   --panel-background: #1e1e2e !important;
   border: 1px solid #b4befe !important;
+}
+
+#context-navigation > .menuitem-iconic {
+  color: #b4befe !important;
+}
+
+.menu-text,
+.menu-iconic-text {
+  color: #cdd6f4 !important;
 }
 
 /* show bottombar elements on hover */
@@ -979,7 +989,7 @@ body > hbox {
   border-bottom: 1px solid var(--na-color-border) !important;
 }
 
-/* === FINDBAR (from natsumi browser and edited by me) === */
+/* === FINDBAR === */
 
 @keyframes initial-animation {
   from {
@@ -1364,6 +1374,6 @@ findbar {
  }
 
 * {
-	font-family: "JetBrainsMono Nerd Font" !important;
-	border-radius: 0px !important; 
+    font-family: "JetBrainsMono Nerd Font" !important;
+    border-radius: 0px !important; 
 }
