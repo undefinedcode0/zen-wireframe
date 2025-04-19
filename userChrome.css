@@ -153,7 +153,7 @@ panelview {
       }
     }
 
-    
+
     /* auto hide top sidebar toolbar except menu button */
     #zen-sidebar-top-buttons>#zen-sidebar-top-buttons-customization-target>*:nth-child(n+2) {
       opacity: 0 !important;
@@ -162,9 +162,9 @@ panelview {
 
     :has(#zen-sidebar-top-buttons:hover) #zen-sidebar-top-buttons-customization-target>* {
       opacity: 1 !important;
-    }    
-    
-    
+    }
+
+
     /* move sidebar navbar to bottom */
     #nav-bar {
       order: 1 !important;
@@ -453,17 +453,33 @@ panelview {
 /* context menus */
 menupopup,
 panel {
-  --panel-background: #1e1e2e !important;
-  border: 1px solid #b4befe !important;
+  --panel-background: var(--na-color-bg) !important;
+  -moz-appearance: none !important;
+  border: 2px solid var(--na-color-border) !important;
+}
+
+#ContentSelectDropdown > menupopup[customoptionstyling="true"]::part(arrowscrollbox) {
+  background-color: var(--na-color-bg) !important;
+  background: var(--na-color-bg) !important;
+  -moz-appearance: none !important;
+}
+
+menupopup#ContentSelectDropdownPopup > menuitem {
+  background: transparent !important;
+}
+
+menupopup#ContentSelectDropdownPopup > menuitem:hover,
+menupopup#ContentSelectDropdownPopup > menuitem[selected="true"] {
+  background: var(--zen-colors-primary) !important;
 }
 
 #context-navigation > .menuitem-iconic {
-  color: #b4befe !important;
+  color: var(--zen-colors-primary) !important;
 }
 
 .menu-text,
 .menu-iconic-text {
-  color: #cdd6f4 !important;
+  color: var(--lwt-text-color) !important;
 }
 
 /* show bottombar elements on hover */
@@ -554,14 +570,14 @@ panel {
   /* margin-bottom: 10px; */
 
   & > toolbaritem {
-    background-color: color-mix(in srgb, #181825 70%, #1e1e2e 30%) !important;
+    background-color: color-mix(in srgb, var(--zen-colors-tertiary) 70%, #1e1e2e 30%) !important;
   }
 }
 
 #zen-media-info-vbox {
   & label {
     opacity: 1 !important;
-    color: #cdd6f4 !important;
+    color: var(--lwt-text-color) !important;
   }
 }
 
@@ -1014,11 +1030,11 @@ findbar {
   height: auto !important;
   flex-wrap: wrap;
   border-radius: 15px;
-  background: #1e1e2e !important;
-  border: 2px solid #b4befe !important;
+  background: var(--na-color-bg) !important;
+  border: 2px solid var(--zen-colors-border) !important;
   opacity: 1;
   transition: background 0.2s ease, opacity 0.2s ease, visibility 0.2s ease,
-    top 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+  top 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
   animation: initial-animation 0.2s ease;
   /* box-shadow: 0 0 10px #b4befe !important; */
 
@@ -1137,8 +1153,8 @@ findbar {
         /*noinspection CssInvalidFunction*/
 
         &::-moz-selection {
-          background: #45475a
-            /* light-dark(var(--natsumi-primary-color), color-mix(in srgb, var(--natsumi-colors-primary) 60%, white)) */ !important;
+            /* light-dark(var(--natsumi-primary-color), color-mix(in srgb, var(--natsumi-colors-primary) 60%, white)) */
+          background: #45475a !important;
         }
       }
 
@@ -1243,7 +1259,7 @@ findbar {
   }
 }
 
-/* make the input bar fit the content 
+/* make the input bar fit the content
 .findbar-container {
   background-color: var(--na-color-bg) !important;
   height: auto !important;
@@ -1374,6 +1390,6 @@ findbar {
  }
 
 * {
-    font-family: "JetBrainsMono Nerd Font" !important;
-    border-radius: 0px !important; 
+	font-family: "JetBrainsMono Nerd Font" !important;
+	border-radius: 0px !important;
 }
