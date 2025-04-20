@@ -1,38 +1,54 @@
 @media (prefers-color-scheme: dark) {
     :root {
-        --zen-colors-primary: #313244 !important;
-        --zen-primary-color: #b4befe !important;
-        --zen-colors-secondary: #313244 !important;
-        --zen-colors-tertiary: #181825 !important;
-        --zen-colors-border: #b4befe !important;
-        --toolbarbutton-icon-fill: #b4befe !important;
-        --lwt-text-color: #cdd6f4 !important;
-        --toolbar-field-color: #cdd6f4 !important;
-        --tab-selected-textcolor: rgb(192, 202, 249) !important;
-        --toolbar-field-focus-color: #cdd6f4 !important;
-        --toolbar-color: #cdd6f4 !important;
-        --newtab-text-primary-color: #cdd6f4 !important;
-        --arrowpanel-color: #cdd6f4 !important;
-        --arrowpanel-background: #1e1e2e !important;
-        --sidebar-text-color: #cdd6f4 !important;
-        --lwt-sidebar-text-color: #cdd6f4 !important;
-        --lwt-sidebar-background-color: #11111b !important;
-        --toolbar-bgcolor: #313244 !important;
-        --newtab-background-color: #1e1e2e !important;
-        --zen-themed-toolbar-bg: #181825 !important;
-        --zen-main-browser-background: #181825 !important;
-    }
-
-    :root {
-        --na-color-text: #cdd6f4 !important;
-        --na-color-bg: #1e1e2e !important;
-        --na-color-text-second: #cdd6f4 !important;
-        --na-color-bg-second: #1e1e2e !important;
-        --na-color-border: #b4befe !important;
+        /* ——— Base palette ——— */
+        --zen-bg-primary: #313244 !important;
+        --zen-tertiary-bg: #181825 !important;
+        --zen-bg-alt: #1e1e2e !important;
+        --zen-bg-sidebar: #11111b !important;
+        --zen-color-accent: #b4befe !important;
+        --zen-text-primary: #cdd6f4 !important;
+        --zen-tab-selected-text: rgb(192, 202, 249) !important;
         --na-color-zero: rgba(0, 0, 0, 0);
-        --na-urlbar-bg: #1e1e2e !important;
+
+        /* ——— Derived variables ——— */
+        --zen-colors-primary: var(--zen-bg-primary) !important;
+        --zen-colors-secondary: var(--zen-bg-primary) !important;
+        --toolbar-bgcolor: var(--zen-bg-primary) !important;
+
+        --zen-colors-tertiary: var(--zen-tertiary-bg) !important;
+        --zen-themed-toolbar-bg: var(--zen-tertiary-bg) !important;
+        --zen-main-browser-background: var(--zen-tertiary-bg) !important;
+
+        --newtab-background-color: var(--zen-bg-alt) !important;
+        --arrowpanel-background: var(--zen-bg-alt) !important;
+
+        --lwt-sidebar-background-color: var(--zen-bg-sidebar) !important;
+
+        --zen-primary-color: var(--zen-color-accent) !important;
+        --zen-colors-border: var(--zen-color-accent) !important;
+        --toolbarbutton-icon-fill: var(--zen-color-accent) !important;
+        --na-color-border: var(--zen-color-accent) !important;
+
+        --lwt-text-color: var(--zen-text-primary) !important;
+        --toolbar-field-color: var(--zen-text-primary) !important;
+        --toolbar-field-focus-color: var(--zen-text-primary) !important;
+        --toolbar-color: var(--zen-text-primary) !important;
+        --newtab-text-primary-color: var(--zen-text-primary) !important;
+        --arrowpanel-color: var(--zen-text-primary) !important;
+        --sidebar-text-color: var(--zen-text-primary) !important;
+        --lwt-sidebar-text-color: var(--zen-text-primary) !important;
+
+        --na-color-text: var(--zen-text-primary) !important;
+        --na-color-text-second: var(--zen-text-primary) !important;
+        --na-color-bg: var(--zen-bg-alt) !important;
+        --na-color-bg-second: var(--zen-bg-alt) !important;
+        --na-urlbar-bg: var(--zen-bg-alt) !important;
+
+        /* keep the one-off tab-selected override */
+        --tab-selected-textcolor: var(--zen-tab-selected-text) !important;
     }
 
+    /* private-browsing colors remain unchanged */
     :root[privatebrowsingmode] {
         --na-color-text: rgba(192, 180, 211, 1);
         --na-color-bg: rgba(54, 20, 192, 1);
