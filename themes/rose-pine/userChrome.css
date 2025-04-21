@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* Original code by napuzu. Modifications by undefinedcode0 */
 :root {
     --na-border-radius: 0px;
     --na-border-radius-small: 0px;
@@ -6,9 +6,6 @@
     --na-anim-duration: 0.3s;
     --na-urlbar-width: 60vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
 }
-=======
-/* Original code by napuzu. Modifications by undefinedcode0 */
->>>>>>> 875a455b263473e2b897a1eb30f39562b550fa29
 
 @media (prefers-color-scheme: dark) {
     :root {

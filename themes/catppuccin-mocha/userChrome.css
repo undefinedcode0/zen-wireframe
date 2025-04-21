@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-:root {
-      --na-border-radius: 0px;
-      --na-border-radius-small: 0px;
-      --na-window-margin: 12px;
-      --na-anim-duration: 0.3s;
-      --na-urlbar-width: 60vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
-}
-=======
 /* Original code by napuzu. Modifications by undefinedcode0 */
->>>>>>> 875a455b263473e2b897a1eb30f39562b550fa29
+:root {
+    --na-border-radius: 0px;
+    --na-border-radius-small: 0px;
+    --na-window-margin: 12px;
+    --na-anim-duration: 0.3s;
+    --na-urlbar-width: 60vw; /* vw: viewport or your browser width, 100vw means 100% browser width */
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -296,29 +293,29 @@ panelview {
 
 /* expanded urlbar */
 #urlbar {
-  top: auto !important;
+    top: auto !important;
 
-  /* move urlbar input to bottom*/
-  &>.urlbar-input-container {
-    order: 1 !important;
-  }
+    /* move urlbar input to bottom*/
+    & > .urlbar-input-container {
+        order: 1 !important;
+    }
 }
 
 #urlbar[open] {
-  position: fixed !important;
-  bottom: 62.5px !important;
+    position: fixed !important;
+    bottom: 62.5px !important;
 
-  /* set your bar’s width directly */
-  width: var(--na-urlbar-width) !important;
+    /* set your bar’s width directly */
+    width: var(--na-urlbar-width) !important;
 
-  /* center it */
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+    /* center it */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
 
-  /* flex and stacking */
-  display: flex !important;
-  flex-direction: column !important;
-  z-index: 1000 !important;
+    /* flex and stacking */
+    display: flex !important;
+    flex-direction: column !important;
+    z-index: 1000 !important;
 }
 
 /* navbar padding */
