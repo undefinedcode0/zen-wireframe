@@ -1,4 +1,4 @@
-# zen-wireframe (catppuccin mocha)
+# zen-wireframe
 
 > A fork of [zen-wireframe](https://github.com/napuzu/zen-wireframe) by undefinedcode, with a focus on expanding theme variety, reviving the original design, and adding new features.
 
