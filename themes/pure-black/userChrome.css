@@ -11,27 +11,28 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* ——— Base palette ——— */
-        --zen-bg-primary: #1f1d2e !important;
-        --zen-bg-tertiary: #26233a !important;
-        --zen-bg-alt: #191724 !important;
-        --zen-bg-sidebar: #11111b !important;
-        --zen-color-accent: #c4a7e7 !important;
-        --zen-text-primary: #e0def4 !important;
-        --zen-tab-selected-text: rgb(192, 202, 249) !important;
+        --zen-bg-primary: #ffffff !important;
+        --zen-tertiary-bg: #141415 !important;
+        --zen-bg-alt: #000000 !important;
+        --zen-bg-sidebar: #ffffff !important;
+        --zen-color-accent: #ffffff !important;
+        --zen-text-primary: #ffffff !important;
+        --zen-tab-selected-text: #8a8a8a !important;
+        --zen-select-bg: #161616 !important;
         --na-color-zero: rgba(0, 0, 0, 0);
-        --zen-select-bg: #26233a !important;
+        --zen-border-bottom: var(--zen-select-bg) !important;
 
         /* ——— Derived variables ——— */
         --zen-colors-primary: var(--zen-bg-primary) !important;
         --zen-colors-secondary: var(--zen-bg-primary) !important;
         --toolbar-bgcolor: var(--zen-bg-primary) !important;
 
-        --zen-colors-tertiary: var(--zen-bg-tertiary) !important;
-        --zen-themed-toolbar-bg: var(--zen-bg-tertiary) !important;
-        --zen-main-browser-background: var(--zen-bg-tertiary) !important;
+        --zen-colors-tertiary: var(--zen-tertiary-bg) !important;
+        --zen-themed-toolbar-bg: var(--zen-tertiary-bg) !important;
+        --zen-main-browser-background: var(--zen-tertiary-bg) !important;
 
-        --arrowpanel-background: var(--zen-bg-alt) !important;
         --newtab-background-color: var(--zen-bg-alt) !important;
+        --arrowpanel-background: var(--zen-bg-alt) !important;
 
         --lwt-sidebar-background-color: var(--zen-bg-sidebar) !important;
 
@@ -57,17 +58,6 @@
 
         /* keep the one-off tab-selected override */
         --tab-selected-textcolor: var(--zen-tab-selected-text) !important;
-    }
-
-    /* — keep private browsing overrides as is — */
-    :root[privatebrowsingmode] {
-        --na-color-text: rgba(192, 180, 211, 1);
-        --na-color-bg: rgba(54, 20, 192, 1);
-        --na-color-text-second: rgba(192, 180, 211, 0.25);
-        --na-color-bg-second: rgba(54, 20, 192, 0.25);
-        --na-color-border: rgba(209, 207, 192, 1);
-        --na-color-zero: rgba(0, 0, 0, 0);
-        --na-urlbar-bg: #f3f0e611, #f3f0e6ff;
     }
 }
 
